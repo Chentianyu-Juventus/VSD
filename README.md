@@ -89,9 +89,18 @@ sudo apt install yosys
 yosys
 ```
 
+![image](https://github.com/Chentianyu-Juventus/VSD/assets/149767608/52cdb173-11cb-496a-98c0-5c4d97258b0a)
+
+* 3.check the file.
+  
+```
+ tb_good_mux.v -o good_mux.v
+```
+
+  ![image](https://github.com/Chentianyu-Juventus/VSD/assets/149767608/6b7baefc-5342-4da6-935b-8367cafd5ade)
+
+
 ![Uploading image.png…]()
-
-
 
 
 * Read library using following command, number of cells imported will be displayed after successful run.

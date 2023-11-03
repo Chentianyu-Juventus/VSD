@@ -13,14 +13,13 @@
 
 
 
-## Install
+## iverilog
 
-Using [npm](https://www.npmjs.org/), just run the following command:
+iverilog is the tool used for compiling and simulation purpose. Simulation is the process of creating models that mimic the behavior of the device. Tool performs macro preprocessing, compilation, elaboration, optional optimizations and finally code generation. For more details about the tool refer the wiki.
 
+Use following command to install iverilog on Ubuntu machine.
 ```
-npm install box-intersect
-```
-
+sudo apt install iverilog
 This module works in any reasonable CommonJS environment, such as browsersify, iojs or node.js.
 
 

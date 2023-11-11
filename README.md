@@ -100,22 +100,35 @@ yosys
   ![image](https://github.com/Chentianyu-Juventus/VSD/assets/149767608/6b7baefc-5342-4da6-935b-8367cafd5ade)
 
 
-![Uploading image.png…]()
+![image](https://github.com/Chentianyu-Juventus/VSD/assets/149767608/aa01dbc6-9aa9-439c-a50c-0614719792cc)
 
 
-* Read library using following command, number of cells imported will be displayed after successful run.
-
-```
-read_liberty -lib my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-```
-
-* Read design files using following command, `Successfully finished Verilog frontend` message will be displayed if run is successful.
+*4. Read library using following command, number of cells imported will be displayed after successful run.
 
 ```
-read_verilog ../design_file.v
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 
-* Synthesize the design module by running below command. View the statistics printed.
+![image](https://github.com/Chentianyu-Juventus/VSD/assets/149767608/7a844715-5f5e-48d3-b559-7577906e9ff9)
+
+
+
+
+
+
+
+
+* 5.Read design files using following command, `Successfully finished Verilog frontend` message will be displayed if run is successful.
+
+```
+  read_verilog good_mux.v
+```
+
+![image](https://github.com/Chentianyu-Juventus/VSD/assets/149767608/470ed342-b97f-4816-b5a7-43ad15419fff)
+
+
+
+* 6.Synthesize the design module by running below command. View the statistics printed.
 
 ```
 synth -top design_file
@@ -123,7 +136,7 @@ synth -top design_file
 
 ![yosys_stat](images/yosys_stat.png)
 
-* Generate the netlist, view the standard cells mapped.
+* 7.Generate the netlist, view the standard cells mapped.
 
 ```
 abc -liberty my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib

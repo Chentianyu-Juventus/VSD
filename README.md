@@ -134,7 +134,12 @@ read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 synth -top design_file
 ```
 
-![yosys_stat](images/yosys_stat.png)
+![image](https://github.com/Chentianyu-Juventus/VSD/assets/149767608/aab0d972-cfab-4c85-ae0f-8402f93decdf)
+
+
+![image](https://github.com/Chentianyu-Juventus/VSD/assets/149767608/fe97785f-2e3f-4e2a-971a-171646e220e8)
+
+
 
 * 7.Generate the netlist, view the standard cells mapped.
 
@@ -142,7 +147,8 @@ synth -top design_file
 abc -liberty my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 
-![yosys_cell_map](images/yosys_cell_map.png)
+![image](https://github.com/Chentianyu-Juventus/VSD/assets/149767608/5a5cd237-f9c7-409b-a3e2-411157898551)
+
 
 * View the realized logic using below command.
 
